@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('./assets/images/calc.png')  ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+  margin: 0 auto;
+  background-color: #51ae5e;
+  color: #fff;
+  width: 500px;
+  height: 45px;
+  position: relative;
+  top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 1 1 rgb(255, 255, 255);
+}
+.calc-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  gap: 30px;
+  background-color: #19cfc9;
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px black;
+}
+
+#result{
+  font-weight: bold;
+  color: #fff ;
+  font-size : 1.7rem ;
+  position: relative;
+  top: 30px;
+}
+
+#field{
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+   position: relative;
+  top: 30px;
+   font-size: 1.2rem;
+}
+
+.btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+ 
+}
+
+
+
+.btns2 , .btns1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.btn{
+  width: 40%;
+  padding: 15px;
+  font-size: 1.2rem;
+  white-space: nowrap; /* عشان يضلو على نفس السطر */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color: #f5c346;
+  color: #fff;
+}
+
+input:focus {
+  border: 2px solid #000 ;
+  background-color: #fff6f6;
+  outline: none;
+  transition: 0.5;
+}
